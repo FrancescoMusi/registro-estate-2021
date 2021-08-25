@@ -22,7 +22,7 @@
       }     
       
       hr {
-        margin-top: 1px;
+        margin-top: 0px;
         width: 90%;
         size: 2px;
       }
@@ -35,6 +35,7 @@
         padding-top:70px;
         padding-bottom:70px;
         padding-left: 60px;
+        width: 75%;
       }
 
       #footer {
@@ -57,7 +58,9 @@
 
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        
+     
+    
+    <!--SEZIONE NAVBAR-->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
       <h3 class="title text-light">Registro Elettronico</h3>
       
@@ -83,63 +86,109 @@
 
     <br>
 
+
+
+
+    <!--SEZIONE ALLUNNI-->
     <div id="section1" class="section container-fluid">
-      <h1>Alunni</h1>
-      <!--name, classroom, email-->
+      <h2>ALUNNI</h2>
+      <p>I tuoi compagni di classe:</p>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Francesco Musi</td>
+              <td>framusi@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Matteo Bartoli</td>
+              <td>mattebarto@gmial.com</td>
+            </tr>            
+          </tbody>
+        </table>
     </div>
 
     <hr color="#2980b9">
 
+
+
+
+    <!--SEZIONE DOCENTI-->
     <div id="section2" class="section container-fluid">
-      <h1>Docenti</h1>
-      <!--name, materia-->
+      <h2>DOCENTI</h2>
+      <p>I tuoi insegnanti:</p>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Materia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mauro Strozzi</td>
+              <td>Matematica</td>
+            </tr>
+            <tr>
+              <td>Giovanni Bruno</td>
+              <td>Informatica</td>
+            </tr>            
+          </tbody>
+        </table>
     </div>
 
     <hr color="#2980b9">
 
     <!-- qua bisogna fare una query in cui si chiamano con un select tutti i voti e anche i rispettivi docenti e materie e poi dove alla fine si ordina tutto per data-->
 
+
+
+
+     <!--SEZIONE VOTI-->
     <div id="section3" class="section container-fluid">
-      <div class="container">
-        <h2>VOTI</h2>
-        <p>Questi sono i tuoi voti ordinati in base alla data di inserimento:</p>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Data</th>
-              <th>Voto</th>
-              <th>Materia</th>
-              <th>Professore</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>02.12.20</td>
-              <td>7</td>
-              <td>matematica</td>
-              <td>Mauro Strozzi</td>
-            </tr>
-            <tr>
-              <td>03.0.21</td>
-              <td>10</td>
-              <td>matematica</td>
-              <td>Mauro Strozzi</td>
-            </tr>
-            <tr>
-              <td>21.02.21</td>
-              <td>9</td>
-              <td>informatica</td>
-              <td>Giovanni Bruno</td>
-            </tr>
-            <tr>
-              <td>02.04.21</td>
-              <td>8.5</td>
-              <td>informatica</td>
-              <td>Giovanni Bruno</td>
-            </tr>            
-          </tbody>
-        </table>
-      </div>
+      <h2>VOTI</h2>
+      <p>Questi sono i tuoi voti ordinati in base alla data di inserimento:</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Voto</th>
+            <th>Materia</th>
+            <th>Professore</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>02.12.20</td>
+            <td>7</td>
+            <td>matematica</td>
+            <td>Mauro Strozzi</td>
+          </tr>
+          <tr>
+            <td>03.0.21</td>
+            <td>10</td>
+            <td>matematica</td>
+            <td>Mauro Strozzi</td>
+          </tr>
+          <tr>
+            <td>21.02.21</td>
+            <td>9</td>
+            <td>informatica</td>
+            <td>Giovanni Bruno</td>
+          </tr>
+          <tr>
+            <td>02.04.21</td>
+            <td>8.5</td>
+            <td>informatica</td>
+            <td>Giovanni Bruno</td>
+          </tr>            
+        </tbody>
+      </table>
     </div>
 
     <hr color="#2980b9">
@@ -159,35 +208,39 @@
       }
       
     -->
+
+
+
+
+    <!--SEZIONE MEDIE-->
     <div id="section4" class="section container-fluid">
-      <div class="container">
-        <h2>MEDIA VOTI</h2>
-        <p>Queste sono le medie voto di ciascuna materia:</p>
-        <table class="table table-bordered table-hover">
-          <thead>
-            <tr>
-              <th>Media</th>
-              <th>Materia</th>
-              <th>Professore</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>8.5</td>
-              <td>Matematica</td>
-              <td>Mauro Strozzi</td>
-            </tr>
-            <tr>
-              <td>8.75</td>
-              <td>informatica</td>
-              <td>Giovanni Bruno</td>
-            </tr>            
-          </tbody>
-        </table>
-      </div>
+      <h2>MEDIA VOTI</h2>
+      <p>Queste sono le medie voto di ciascuna materia:</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Media</th>
+            <th>Materia</th>
+            <th>Professore</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8.5</td>
+            <td>Matematica</td>
+            <td>Mauro Strozzi</td>
+          </tr>
+          <tr>
+            <td>8.75</td>
+            <td>informatica</td>
+            <td>Giovanni Bruno</td>
+          </tr>            
+        </tbody>
+      </table>
     </div>
 
     <hr color="#2980b9">
+    
 
     <div id="footer" class="container-fluid text-center">
       <h3 id="footer-title">Contatti</h3>
